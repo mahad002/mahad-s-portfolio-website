@@ -198,7 +198,7 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Believe <span className="text-accent">practical</span> build
+            Visioning <span className="text-accent">practical</span> building
             to prove.
           </motion.h2>
           <motion.p
