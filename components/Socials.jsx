@@ -32,6 +32,11 @@ export const socialData = [
     link: "https://www.upwork.com/freelancers/~01a9f18117e0380a9c",
     Icon: SiUpwork,
   },
+  {
+    name: "Github",
+    link: "https://github.com/mahad002",
+    Icon: RiGithubLine,
+  },
   // {
   //   name: "Facebook",
   //   link: "https://facebook.com",
@@ -47,11 +52,6 @@ export const socialData = [
   //   link: "https://pinterest.com",
   //   Icon: RiPinterestLine,
   // },
-  {
-    name: "Github",
-    link: "https://github.com/mahad002",
-    Icon: RiGithubLine,
-  },
 ];
 
 const Socials = () => {

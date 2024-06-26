@@ -198,8 +198,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Believe <span className="text-accent">practical</span> build
+            to prove.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
