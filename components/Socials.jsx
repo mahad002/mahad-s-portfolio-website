@@ -9,6 +9,8 @@ import {
   RiPinterestLine,
 } from "react-icons/ri";
 
+import { SiFiverr, SiUpwork } from "react-icons/si";
+
 export const socialData = [
   {
     name: "YouTube",
@@ -21,20 +23,30 @@ export const socialData = [
     Icon: RiInstagramLine,
   },
   {
-    name: "Facebook",
-    link: "https://facebook.com",
-    Icon: RiFacebookLine,
+    name: "Fiverr",
+    link: "https://www.fiverr.com/mahadsheikh08",
+    Icon: SiFiverr,
   },
   {
-    name: "Dribbble",
-    link: "https://dribbble.com",
-    Icon: RiDribbbleLine,
+    name: "Upwork",
+    link: "https://www.upwork.com/freelancers/~01a9f18117e0380a9c",
+    Icon: SiUpwork,
   },
-  {
-    name: "Pinterest",
-    link: "https://pinterest.com",
-    Icon: RiPinterestLine,
-  },
+  // {
+  //   name: "Facebook",
+  //   link: "https://facebook.com",
+  //   Icon: RiFacebookLine,
+  // },
+  // {
+  //   name: "Dribbble",
+  //   link: "https://dribbble.com",
+  //   Icon: RiDribbbleLine,
+  // },
+  // {
+  //   name: "Pinterest",
+  //   link: "https://pinterest.com",
+  //   Icon: RiPinterestLine,
+  // },
   {
     name: "Github",
     link: "https://github.com/mahad002",

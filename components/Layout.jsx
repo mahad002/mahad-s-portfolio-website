@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Nav from "../components/Nav";
 import TopLeftImg from "../components/TopLeftImg";
 
-// setup font
+// Setup font
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
@@ -14,9 +14,7 @@ const sora = Sora({
 
 const Layout = ({ children }) => {
   return (
-    <main
-      className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
-    >
+    <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative flex flex-col h-screen`}>
       {/* metadata */}
       <Head>
         <title>M Mahad Sheikh | Portfolio</title>
@@ -32,13 +30,17 @@ const Layout = ({ children }) => {
         <meta name="theme-color" content="#f13024" />
       </Head>
 
-      <TopLeftImg />
-      <Nav />
       <Header />
+      <Nav />
 
-      {/* main content */}
-      {children}
-    </main>
+      {/* Main content with conditional scrolling */}
+      <main className="relative flex-1 overflow-y-auto lg:overflow-hidden">
+        <div className="container mx-auto px-4 md:px-8 py-8">{children}</div>
+      </main>
+
+      {/* Background elements */}
+      <TopLeftImg />
+    </div>
   );
 };
 
