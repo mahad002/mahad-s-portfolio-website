@@ -9,7 +9,11 @@ import {
   RiPinterestLine,
 } from "react-icons/ri";
 
-import { SiFiverr, SiUpwork } from "react-icons/si";
+import { SiFiverr, SiUpwork , SlSocialSpotify } from "react-icons/si";
+
+import { FaWhatsapp } from "react-icons/fa";
+
+import { FaLinkedinIn, FaRegEnvelope  } from "react-icons/fa6";
 
 export const socialData = [
   {
@@ -28,10 +32,30 @@ export const socialData = [
     Icon: SiFiverr,
   },
   {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/muhammad-mahad-sheikh-989a2924b/",
+    Icon: FaLinkedinIn,
+  },
+  {
     name: "Upwork",
     link: "https://www.upwork.com/freelancers/~01a9f18117e0380a9c",
     Icon: SiUpwork,
   },
+  {
+    name: "Whatsapp",
+    link: "https://wa.me/923105589303",
+    Icon: FaWhatsapp,
+  },
+  {
+    name: "Email",
+    link: "mailto:mahad112002@gmail.com",
+    Icon: FaRegEnvelope ,
+  },
+  // {
+  //   name: "Spotify",
+  //   link: "https://open.spotify.com/artist/2bsO6llLoRgLaJ1HkX7cdS?si=_UdpqwS1SCStm-npMWeRZw",
+  //   Icon: SlSocialSpotify ,
+  // },
   {
     name: "Github",
     link: "https://github.com/mahad002",
