@@ -83,7 +83,7 @@ const Work = () => {
         </div>
 
         {/* Slider */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("down", 0.6)}
           initial="hidden"
           animate="show"
@@ -91,14 +91,31 @@ const Work = () => {
           className="w-full xl:max-w-[65%]"
         >
           <WorkSlider />
-        </motion.div>
+        </motion.div> */}
+
+        {/* Floating Button for Mobile View */}
+        <div className="flex justify-center mt-8 xl:hidden">
+          <button
+            type="button"
+            className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+            onClick={() => handleRedirect("https://www.fiverr.com/users/mahadsheikh08/portfolio")}
+          >
+            <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+              My Work
+            </span>
+            <BsArrowRight
+              className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+              aria-hidden
+            />
+          </button>
+        </div>
       </div>
       <Bulb />
 
-      {/* Floating Button */}
+      {/* Floating Button for Desktop View */}
       <button
         type="button"
-        className="fixed bottom-10 right-10 btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+        className="hidden xl:flex fixed bottom-10 right-10 btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 items-center justify-center overflow-hidden hover:border-accent group"
         onClick={() => handleRedirect("https://www.fiverr.com/users/mahadsheikh08/portfolio")}
       >
         <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
