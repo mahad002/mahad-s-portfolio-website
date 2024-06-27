@@ -118,15 +118,15 @@ export const aboutData = [
           { "name": "OpenAI", "icon": SiOpenai }
         ]
       },
-      {
-        "title": "Cloud Computing",
-        "icons": [
-          { "name": "AWS", "icon": FaAws },
-          { "name": "Google Cloud", "icon": FaGoogle },
-          { "name": "Azure", "icon": FaMicrosoft },
-          { "name": "IBM Cloud", "icon": SiIbm }
-        ]
-      }
+      // {
+      //   "title": "Cloud Computing",
+      //   "icons": [
+      //     { "name": "AWS", "icon": FaAws },
+      //     { "name": "Google Cloud", "icon": FaGoogle },
+      //     { "name": "Azure", "icon": FaMicrosoft },
+      //     { "name": "IBM Cloud", "icon": SiIbm }
+      //   ]
+      // }
     ]
   },
   {
