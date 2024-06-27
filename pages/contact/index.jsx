@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
+import { FaWhatsapp, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import icons from react-icons library
 
 import { fadeIn } from "../../variants";
 import { useState } from "react";
@@ -40,8 +41,71 @@ const Contact = () => {
             Let's <span className="text-accent">connect.</span>
           </motion.h2>
 
+          <div className="flex flex-col w-full max-w-[700px] pb-10">
+          {/* Co-Founders heading */}
+          <motion.h2
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2 text-center mb-12 flex justify-center items-center gap-4"
+          >
+            Muhammad Mahad Sheikh
+          </motion.h2>
+
+          {/* buttons for Co-Founders */}
+          <motion.div
+            variants={fadeIn("up", 0.8)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex-1 flex flex-wrap gap-6 w-full mx-auto items-center justify-center"
+          >
+            {/* Instagram Mahad */}
+            <button
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              onClick={() => handleRedirect("https://www.instagram.com/mahad.08/")}
+            >
+              <FaInstagram className="text-[22px] text-pink-500" />
+              &nbsp;Instagram
+              <BsArrowRight className="ml-2 text-[22px]" />
+            </button>
+
+            {/* LinkedIn Mahad */}
+            <button
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              onClick={() => handleRedirect("https://www.linkedin.com/in/muhammad-mahad-sheikh-989a2924b/")}
+            >
+              <FaLinkedin className="text-[22px] text-blue-500" />
+              &nbsp;LinkedIn
+              <BsArrowRight className="ml-2 text-[22px]" />
+            </button>
+
+            {/* Email Mahad */}
+            <button
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              onClick={() => handleRedirect("mailto:mahad112002@gmail.com")}
+            >
+              <FaEnvelope className="text-[22px] text-red-500" />
+              &nbsp;Email
+              <BsArrowRight className="ml-2 text-[22px]" />
+            </button>
+
+            {/* WhatsApp Mahad */}
+            <button
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              onClick={() => handleRedirect("https://wa.me/923105589303")}
+            >
+              <FaWhatsapp className="text-[22px] text-green-500" />
+              &nbsp;Whatsapp
+              <BsArrowRight className="ml-2 text-[22px]" />
+            </button>
+          </motion.div>
+
+        </div>
+
           {/* form */}
-          <motion.form
+          {/* <motion.form
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
@@ -53,7 +117,6 @@ const Contact = () => {
             // only needed for production (in netlify) to accept form input
             data-netlify="true"
           >
-            {/* input group */}
             <div className="flex gap-x-6 w-full">
               <input
                 type="text"
@@ -110,7 +173,7 @@ const Contact = () => {
                 aria-hidden
               />
             </button>
-          </motion.form>
+          </motion.form> */}
         </div>
       </div>
     </div>
