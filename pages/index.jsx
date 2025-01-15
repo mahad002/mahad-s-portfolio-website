@@ -22,7 +22,7 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            believe Only <br /> In{" "}{" "}
+            I believe Only <br /> In{" "}{" "}
             <span className="text-accent"> Numbers</span>
           </motion.h1>
 
